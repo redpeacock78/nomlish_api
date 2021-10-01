@@ -26,6 +26,7 @@ REST API version of Nomlish translation
       500 Server is dead
       ```
   - #### translate
+    https://www.nomlish.tk/api/translate
     - Responses  
       `Responses Schema: application/json`
       ```console
