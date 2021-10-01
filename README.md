@@ -15,7 +15,7 @@ REST API version of Nomlish translation
   ```
 - ### API
   - #### status
-    https://www.nomlish.tk/api/status
+    `GET`: https://www.nomlish.tk/api/status
     - Responses  
       `Responses Schema: application/json`
       ```console
@@ -26,7 +26,7 @@ REST API version of Nomlish translation
       500 Server is dead
       ```
   - #### translate
-    https://www.nomlish.tk/api/translate
+    `POST`: https://www.nomlish.tk/api/translate
     - Responses  
       `Responses Schema: application/json`
       ```console
