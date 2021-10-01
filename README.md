@@ -1,4 +1,5 @@
 # Nomlish API
+![LOGO](https://i.imgur.com/AEPFCkb.png)  
 REST API version of Nomlish translation
 
 ## Usage
