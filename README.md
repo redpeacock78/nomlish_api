@@ -32,11 +32,18 @@ REST API version of Nomlish translation
       ```console
       200 Success
        ├ status: Status of the processing result
-       │         0 if the operation was successful
-       │         1 when translation is not possible
+       │         - 0 if the operation was successful
+       │         - 1 when translation is not possible
        ├ level:  Levels used for translation
        │         Default level is 2
+       │         - 1: 日→野 Lv1
+       │         - 2: 日→野 Lv2
+       │         - 3: 日→野 Lv3
+       │         - 4: 日→野 Lv4
+       │         - 5: 日→ラグーン語
+       │         Not returned when status code is 1 and 100
        └ result: Translation results
+                 Not returned when status code is 1 and 100
       ```
       ```console
       500 Failure
