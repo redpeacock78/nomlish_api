@@ -28,6 +28,15 @@ REST API version of Nomlish translation
       ```
   - #### translate
     `POST`: https://www.nomlish.tk/api/translate
+    - Payload  
+      - `Content-Type`: `application/json`
+      - `Data`  
+        ```json
+        {
+          "level": 2,
+          "text": "任意の文字列"
+        }
+        ```
     - Responses  
       `Responses Schema: application/json`
       ```console
