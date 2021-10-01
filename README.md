@@ -33,8 +33,8 @@ REST API version of Nomlish translation
       - `Data`  
         ```json
         {
-          "level": 2,
-          "text": "任意の文字列" //If not specified, the level will be automatically set to 2
+          "level": 2, //If not specified, the level will be automatically set to 2
+          "text": "任意の文字列"
         }
         ```
     - Responses  
