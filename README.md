@@ -34,7 +34,7 @@ REST API version of Nomlish translation
         ```json
         {
           "level": 2,
-          "text": "任意の文字列"
+          "text": "任意の文字列" //If not specified, the level will be automatically set to 2
         }
         ```
     - Responses  
