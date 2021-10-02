@@ -16,7 +16,7 @@ REST API version of Nomlish translation
   ```
 - ### API
   - #### status
-    `GET`: https://www.nomlish.tk/api/status
+    `GET`: https://www.nomlish.tk/api/ping
     - Responses  
       - `Responses Schema`: `application/json`
       - `Sample`  
