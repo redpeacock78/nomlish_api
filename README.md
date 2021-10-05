@@ -1,6 +1,8 @@
 # Nomlish API
 ![LOGO](https://i.imgur.com/AEPFCkb.png)  
-API version of Nomlish translation
+API version of Nomlish translation  
+
+**Lanuage**: [日本語](https://github.com/redpeacock78/nomlish_api/blob/master/docs/README_JP.md) | [ノムリッシュ語](https://github.com/redpeacock78/nomlish_api/blob/master/docs/README_NOMLISH.md)
 
 ## Usage
 - ### Example
