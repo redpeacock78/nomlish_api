@@ -21,33 +21,31 @@ app.get("/api/ping", (req, res) => {
 
 //翻訳
 app.post("/api/translate", (req, res) => {
+  let level;
+  if (!req.body.level) {
+    level = 2;
+  } else if (typeof req.body.level !== 'number') {
+    level = 2;
+  } else {
+    level = req.body.level;
+  }
   const beforText = req.body.text;
-  const judgeLevel = () => {
-    if (!req.body.level) {
-      return 2
-    } else if (typeof req.body.level !== 'number') {
-      return 2
-    } else {
-      return req.body.level
-    }
-  };
-  const level = judgeLevel();
   nomlish.translate(beforText, level).then((result) => {
+    let response;
     if (result) {
       //正常
-      let response = {
+      response = {
         "status": 0,
         "level": level,
         "result": result
       };
-      res.status(200).json(response);
     } else {
       //翻訳不能
-      let response = {
+      response = {
         "status": 1
       };
-      res.status(200).json(response);
     }
+    res.status(200).json(response);
   }).catch(() => {
     //サーバーエラー
     const response = {
